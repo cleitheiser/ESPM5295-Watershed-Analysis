@@ -9,11 +9,15 @@
         <title>ESPM5295 Watershed Analysis</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!--Bootstrap-->
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <!--<link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style> body {background-color: #f2fcfb; padding: 30px} </style> 
+        <style> body {background-color: #f2fcfb; padding: 30px} </style>
+        <!--<style> body {padding-top: 60px;} </style>
+        @media (max-width: 980px) {body {padding-top: 0;}}-->
     </head>
-    
+
     <body>
         
 <!-- Navigation bar--> 
@@ -23,9 +27,8 @@
                     <a class="navbar-brand" href="https://giscourses.cfans.umn.edu/espm5295">ESPM 5295 - Watershed Analysis</a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="Problem.html">Problem</a></li>
-                    <li><a href="Background.html">Background</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Background_Problem.html">Background & Problem</a></li>
                     <li><a href="Analysis.html">Analysis</a></li>
                     <li><a href="Original%20Data.html">Original Data</a></li>
                     <li><a href="Modifications.html">Modifications</a></li>
@@ -43,25 +46,28 @@
 <!--Title and first paragraph-->
         <h1> WATERSHED ANALYSIS FOR THE UNIVERSITY OF MINNESOTA <br> St. Paul Campus </h1>
         <br>
-        <p>This is a website that was created to display the workflow and results of a watershed analysis of the St. Paul Campus. For more information on part of the project please click on the appropriate label in the ribbon on the top of the page.</p>
+        <p>This is a website that was created to display the workflow and results of a watershed analysis of the St. Paul Campus. For more information on any part of the project please click on the appropriate label in the ribbon on the top of the page.</p>
+<!--Map Section-->
+        <p>
+            <img src="images/StPaulCampus_noback.png" width = "700" height = "900" class = "left"/> 
+            <br>
+            This semester long project utilizes a large variety of skill sets including digitizing, data development, writing topology rules, and creation of a workflow using the model builder tool in ArcMap. 
+        </p>
+        <br>
+        <p>
+            A few exercises were done at the beginning of the semester to aid in the development of the final runoff elimination model. These included one on hydrologic modeling to understand hydrologic processes and included the creation of flowpaths and watersheds. Another exercise was on in LiDAR processing, using LAS tools to create DEM/hillshade and extract tree heights.
+        </p>
+        <br>
+        <p>
+            The majority of the data used was created by digitizing campus features such as buildings, tree canopy, and impervious surfaces such as sidewalks and parking lots. 
+        </p>
+        <br>
+        <p>
+            Sewer grate locations were provided by University Services, LiDAR was downloaded from <a href="http://arcgis.dnr.state.mn.us/maps/mntopo/">MnTOPO</a> and the soils data can be found at the USDA <a href="https://websoilsurvey.sc.egov.usda.gov/App/WebSoilSurvey.aspx"/>Web Soil Survey</a>
+        </p>
         <br>
         <p>To get a more detailed project description and primer on how to replicate the analysis please visit the class webpage which can be found by clicking "ESPM 5295 - Watershed Analysis" at the top of the page.</p>
-<!--Map Section-->
- 
-<!--Comments Section-->       
-        <div class="Comments container">
-            <h5>Comments</h5>
-            <p>Add a comment</p>
-  
-    <!-- Left-aligned media object -->
-        <div class="media">
-            <div class="media-left">
-                <img src="img_avatar1.png" class="media-object" style="width:60px"></div>
-        <div class="media-body">
-        <h4 class="media-heading">Change this to their name</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        </div>
+
 
     
             

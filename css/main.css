@@ -11,7 +11,11 @@ stpaulmap {
     height: 30px;}
 #stpaulmap {text-align: center}
 
-p {font-family: sans-serif; font-size: 18px}
+.left {
+   float: left;
+   padding: 0 20px 20px 0;}
+
+p {font-family: sans-serif; font-size: 18px; line-height: 175%}
 
 h1 {font-family: sans-serif; text-align: center; line-height: 150%}
 
