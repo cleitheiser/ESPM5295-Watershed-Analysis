@@ -11,27 +11,24 @@
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style> body {background-color: #f2fcfb; padding: 30px} </style> 
+        <script> function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {x.className += " responsive";} 
+                else {x.className = "topnav";}}</script>
     </head>
-    
+
     <body>
-        
-<!-- Navigation bar--> 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="https://giscourses.cfans.umn.edu/espm5295">ESPM 5295 - Watershed Analysis</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="Background_Problem.html">Background & Problem</a></li>
-                    <li><a href="Analysis.html">Analysis</a></li>
-                    <li><a href="Original%20Data.html">Original Data</a></li>
-                    <li><a href="Modifications.html">Modifications</a></li>
-                    <li><a href="Results.html">Results</a></li>  
-                </ul>
-            </div>
-        </nav>
+<!--Navigation Bar-->
+        <div class="topnav" id="myTopnav">
+            <a class="navbar-brand" href="https://giscourses.cfans.umn.edu/espm5295">ESPM 5295 - Watershed Analysis</a>
+            <a href="index.html">Home</a>
+            <a href="Background_Problem.html">Background & Problem</a>
+            <a href="Analysis.html">Analysis</a>
+            <a href="Original%20Data.html">Original Data</a>
+            <a href="Modifications.html" class="active">Modifications</a>
+            <a href="Results.html">Results</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
 <!--Green border around the page-->        
         <div id="left"></div>
         <div id="right"></div>
@@ -54,25 +51,25 @@
             <div class="row">
                 <div class="col-sm-4">
                     <h5>Canopy</h5>
-              	     <img src=http://umn.maps.arcgis.com/sharing/rest/content/items/ad0ffd8b13e748bca0d8ff254643bb79/data width = "250" height = "200" alt = 1></div>
+              	     <img src=images/canopy.jpg width = "250" height = "200" alt = "Canopy"></div>
                 <div class="col-sm-4">
                     <h5>Permeable Pavement</h5>
-                    <img src=http://umn.maps.arcgis.com/sharing/rest/content/items/9d79a279e4164a5689eb9b291bf3dab0/data width = "250" height = "200" alt = 1></div>
+                    <img src=images/permeable_pavement.jpg width = "250" height = "200" alt = "permeable pavement"></div>
                   <div class="col-sm-4">
                     <h5>Rain Gardens</h5>
-                    <img src=http://umn.maps.arcgis.com/sharing/rest/content/items/057d45d5235d4127ad65e30c73b7c6e0/data width = "250" height = "200" alt = 1></div>        
+                    <img src=images/rain_garden2.jpg width = "250" height = "200" alt = "rain gardens"></div>        
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
                     <h5>Green Roofs</h5>
-              	     <img src=http://umn.maps.arcgis.com/sharing/rest/content/items/6dfbac23e23549c2bce82aced1925d60/data width = "250" height = "200" alt = 1></div>
+              	     <img src=images/green_roofs.jpg width = "250" height = "200" alt = "green roofs"></div>
                 <div class="col-sm-4">
                     <h5>Underground Storage</h5>
-                    <img src=http://umn.maps.arcgis.com/sharing/rest/content/items/21fc1c9acf904602afcc648561fee19c/data width = "250" height = "200" alt = 1></div>
+                    <img src=images/Underground_storage.jpeg width = "250" height = "200" alt = "underground storage"></div>
                   <div class="col-sm-4">
                     <h5>Getting Crazy</h5>
-                    <img src=http://umn.maps.arcgis.com/sharing/rest/content/items/41bd56e122114f5b89c9030ac5995e65/data width = "250" height = "200" alt = 1></div>        
+                    <img src=images/crazy%20green%20roof.jpg width = "250" height = "200" alt = "crazy green roof"></div>        
             </div>
         </div>

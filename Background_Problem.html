@@ -11,27 +11,24 @@
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style> body {background-color: #f2fcfb; padding: 30px} </style> 
+        <script> function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {x.className += " responsive";} 
+                else {x.className = "topnav";}}</script>
     </head>
-    
+
     <body>
-        
-<!-- Navigation bar--> 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="https://giscourses.cfans.umn.edu/espm5295">ESPM 5295 - Watershed Analysis</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="Background_Problem.html">Background & Problem</a></li>
-                    <li><a href="Analysis.html">Analysis</a></li>
-                    <li><a href="Original%20Data.html">Original Data</a></li>
-                    <li><a href="Modifications.html">Modifications</a></li>
-                    <li><a href="Results.html">Results</a></li>  
-                </ul>
-            </div>
-        </nav>
+<!--Navigation Bar-->
+        <div class="topnav" id="myTopnav">
+            <a class="navbar-brand" href="https://giscourses.cfans.umn.edu/espm5295">ESPM 5295 - Watershed Analysis</a>
+            <a href="index.html">Home</a>
+            <a href="Background_Problem.html" class="active">Background & Problem</a>
+            <a href="Analysis.html">Analysis</a>
+            <a href="Original%20Data.html">Original Data</a>
+            <a href="Modifications.html">Modifications</a>
+            <a href="Results.html">Results</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
 <!--Green border around the page-->        
         <div id="left"></div>
         <div id="right"></div>

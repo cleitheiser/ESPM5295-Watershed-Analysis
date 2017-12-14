@@ -73,7 +73,7 @@ h1 {font-family: sans-serif; text-align: center; line-height: 150%}
   color: white;}
 
 /* Add an active class to highlight the current page CHECK THIS*/
-.topnav .active {
+.active {
   color: white;}
 
 /* Hide the link that should open and close the topnav on small screens */
