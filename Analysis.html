@@ -38,14 +38,42 @@
         <br>
         <h1>Analysis and Workflow</h1>
         <br>
-        <p>ESRI ArcMap was used for all the analyses for this project. Something about data prep</p>
-        <h3>Model</h3>        
-        <h3>Data Sources</h3>
-        <p>
-        Absorption Rates 
-            Soils:
-            Excessively Drained: 75% of first 3", after that it is runoff
-            Well drained: 75% of first 1" 
-            Urban land 75% for first 1/2" 
-        </p>
-        <h3>Information</h3>
+        <p>ESRI ArcMap was used for all the analyses for this project. Below is the model used to run the analysis. It was built using the model builder tool.</p>
+        <h3>Model</h3>
+        <img src=images/Model.png width="100%" alt = "Model">
+        <p>The blue circles represent the original features classes. The yellow squares are analysis functions, and the green circles are the outputs. The original features are input and clipped to the study area. The canopy and storm level are converted to rasters to be able to calculate the rainfall at surface. Meanwhile the buildings, and pervious surfaces are unioned and erased from the soils. Runoff is calculated via the raster calculator from the rainfall and soils layers. The buildings and impervious surfaces are subtracted to just limit the runoff soils layer. Runoff is then aggregated by watershed.</p>
+        <br>
+        
+        <h3>Analysis Information</h3>
+        <p>Soil:</p>
+        <ul>
+			<li>Excessively Drained: 75% of the first 3"</li>
+			<li>Well drained: 75% of first 1"</li>
+			<li>Urban land 75% of the first 1/2"</li>
+        </ul>
+        <p>Vegetation:</p>
+        <ul>
+            <li>Deciduous trees have a canopy radius of 40ft, and conifers are 25ft </li>
+			<li><strong>Tall Canopy (over 9m): </strong>Deciduous trees absorb the first 1/4", conifers absorb the first 1/3 of rainfall" </li>
+			<li><strong>Short Canopy (1.5 to 9m): </strong></li>
+            <li><strong>Other vegetation: </strong>shrubs, grass, flower beds absorb a percentage of the rainfall depending on soil type </li>
+        </ul>
+        <p>Surface Sinks:</p>
+        <ul>
+			<li>May not take up more than 15% of existing greenspace for each watershed</li>
+			<li>Parking lots may not be reduced by more than 50%</li>
+            <li>Sink depth is 1.5m</li>
+        </ul>
+        <p>Green Roofs:</p>
+        <ul>
+			<li>Green roofs will absorb the first 2" of rainfall</li>
+            <li>Requires modifications of the model</li>
+        </ul>
+        <p>Underground Storage:</p>
+        <ul>
+			<li>May only go under existing parking lots or tree free areas</li>
+            <li>There is no depth limit to underground storage, so all excess rainfall will be absorbed</li>
+        </ul>
+        <br>
+</body>
+</html>
