@@ -11,6 +11,9 @@ body {background-color: #f2fcfb; padding-left: 30px; padding-right: 30px}
 
 h1 {font-family: sans-serif; text-align: center; line-height: 150%}
 
+li {
+    font-size: 18px;
+}
 /*table*/
 table, th, td {
     border: 1px solid black;

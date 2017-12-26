@@ -41,12 +41,12 @@
         <p>ESRI ArcMap was used for all the analyses for this project. Below is the model used to run the analysis. It was built using the model builder tool.</p>
         <h3>Model</h3>
         <img src=images/Model.png width="100%" alt = "Model">
-        <p>The blue circles represent the original features classes. The yellow squares are analysis functions, and the green circles are the outputs. The original features are input and clipped to the study area. The canopy and storm level are converted to rasters to be able to calculate the rainfall at surface. Meanwhile the buildings, and pervious surfaces are unioned and erased from the soils. Runoff is calculated via the raster calculator from the rainfall and soils layers. The buildings and impervious surfaces are subtracted to just limit the runoff soils layer. Runoff is then aggregated by watershed.</p>
         <br>
-        
+        <p><br>The blue circles represent the original layers. The yellow squares are analysis functions, and the green circles are the outputs. The original features are input and clipped to the study area. The canopy and storm level are converted to rasters to be able to calculate the rainfall at surface. Meanwhile the buildings and impervious surfaces are unioned and erased from the soils. Runoff is calculated via the raster calculator from the rainfall and soils layers. The buildings and impervious surfaces are subtracted to just limit the runoff to the soils layer. Runoff is then aggregated by watershed.</p>
+        <br>
         <h3>Analysis Information</h3>
         <p>Soil:</p>
-        <ul>
+        <ul>    
 			<li>Excessively Drained: 75% of the first 3"</li>
 			<li>Well drained: 75% of first 1"</li>
 			<li>Urban land 75% of the first 1/2"</li>
